@@ -9,10 +9,10 @@ Three-tab IndexedStack-based navigation (Products, Posts, Settings) preserving s
 ### Products Tab
 Fetches from /products?limit=10&skip=0 with skip-based infinite scroll pagination triggered 200px before the list end. Each card displays a category-mapped Material icon as a thumbnail, product title, price, and star rating. Tapping a card opens a detail screen with full description, discount badge, stock count, and tags.
 
-#### Posts Tab
+### Posts Tab
 Fetches from /posts?limit=10&skip=0 with identical skip-based pagination. Each card shows tag chips, title, a 2-line body preview, and like/dislike/view counts. Tapping opens a detail screen with full body text and reaction stats.
 
-#### Settings Tab
+### Settings Tab
 Displays cached user data (initials avatar, full name, username, email) without any additional API call. Includes a light/dark mode toggle that persists the selection to SharedPreferences and applies it instantly app-wide. Logout triggers a confirmation dialog before clearing the session.
 
 ## Theme Management
@@ -42,6 +42,11 @@ Clean Architecture with three layers: domain (entities, repository contracts, us
 
 <img width="377" height="677" alt="image" src="https://github.com/user-attachments/assets/35d79f21-e588-4213-b0ca-a8c1693c77dd" />
 
+## Products Description Page
+
+<img width="382" height="672" alt="image" src="https://github.com/user-attachments/assets/9d03e01f-8d76-4f41-8063-5221f14c10f5" />
+
+
 ## Posts
 <img width="392" height="687" alt="image" src="https://github.com/user-attachments/assets/e8650fe2-fd2f-4aed-8f86-0dc4a72045bd" />
 
@@ -49,7 +54,7 @@ Clean Architecture with three layers: domain (entities, repository contracts, us
 The settings page also contains the toggle button to switch from light to dark theme. 
 <img width="392" height="681" alt="image" src="https://github.com/user-attachments/assets/a00b6ee5-904f-4fc1-9bce-26c3d74e84ef" />
 
-#Sign out alert dialogue box 
+## Sign out alert dialogue box 
 <img width="380" height="671" alt="image" src="https://github.com/user-attachments/assets/a842d0e3-8417-4fe7-a594-9ee16b6c6732" />
 
 
