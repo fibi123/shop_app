@@ -1,12 +1,12 @@
 
 ## Summary
-## User Authentication
+### User Authentication
 Login screen with username/password fields hitting the DummyJSON /auth/login endpoint. On success, the full user object is serialized and persisted via SharedPreferences. On app launch, the splash screen checks for a cached session and auto-navigates to home if found, skipping the login screen entirely. Logout clears the cache and redirects back to login.
 
 ## Bottom Navigation
 Three-tab IndexedStack-based navigation (Products, Posts, Settings) preserving scroll state across tab switches. Each tab is independently managed by its own BLoC.
 
-### Products Tab
+#### Products Tab
 Fetches from /products?limit=10&skip=0 with skip-based infinite scroll pagination triggered 200px before the list end. Each card displays a category-mapped Material icon as a thumbnail, product title, price, and star rating. Tapping a card opens a detail screen with full description, discount badge, stock count, and tags.
 Posts Tab
 Fetches from /posts?limit=10&skip=0 with identical skip-based pagination. Each card shows tag chips, title, a 2-line body preview, and like/dislike/view counts. Tapping opens a detail screen with full body text and reaction stats.
